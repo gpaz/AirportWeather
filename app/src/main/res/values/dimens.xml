@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="xxLarge_text_size">40sp</dimen>
+
+    <dimen name="airport_name_size">20sp</dimen>
+    <dimen name="airport_icao_size">@dimen/normal_text_size</dimen>
+    <dimen name="airport_city_size">@dimen/normal_text_size</dimen>
+    <dimen name="airport_latitude_size">@dimen/normal_text_size</dimen>
+    <dimen name="airport_longitude_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_clouds_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_temperature_size">@dimen/xxLarge_text_size</dimen>
+    <dimen name="weather_windspeed_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_weathercondition_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_dewpoint_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_winddirection_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_sealevelpressure_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_elevation_size">@dimen/normal_text_size</dimen>
+    <dimen name="weather_humidity_size">@dimen/normal_text_size</dimen>
+
+    <dimen name="progress_indeterminate_normal_size">48dp</dimen>
+</resources>

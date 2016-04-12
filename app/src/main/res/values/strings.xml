@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ICAO Weather Report</string>
+
+    <string name="search_hint">Enter city name...</string>
+</resources>

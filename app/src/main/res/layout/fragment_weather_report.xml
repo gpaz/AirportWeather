@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.algee.airportweather.weatherui.StationListFragment">
+
+    <include layout="@layout/progress_indeterminate_normal"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/selected_station_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/airport_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/airport_city_size"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/airport_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/airport_name_size"/>
+
+                    <TextView
+                        android:id="@+id/airport_icao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/airport_name"
+                        android:textSize="@dimen/airport_icao_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/airport_icao"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:textSize="@dimen/weather_temperature_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_temperature"
+                        android:textSize="@dimen/airport_latitude_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_latitude"
+                        android:textSize="@dimen/airport_longitude_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_clouds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_longitude"
+                        android:textSize="@dimen/weather_clouds_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_elevation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_clouds"
+                        android:textSize="@dimen/weather_elevation_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_elevation"
+                        android:textSize="@dimen/weather_weathercondition_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_dewpoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_condition"
+                        android:textSize="@dimen/weather_dewpoint_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_humidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_dewpoint"
+                        android:textSize="@dimen/weather_humidity_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_sea_level_pressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_humidity"
+                        android:textSize="@dimen/weather_sealevelpressure_size"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/weather_wind_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_sea_level_pressure"
+                        android:textSize="@dimen/weather_windspeed_size"/>
+
+                    <TextView
+                        android:id="@+id/weather_wind_direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weather_wind_speed"
+                        android:textSize="@dimen/weather_winddirection_size"/>
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/unselected_station_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/airport_icao_failure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/airport_icao_size"/>
+
+                <TextView
+                    android:id="@+id/error_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/airport_icao_failure"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

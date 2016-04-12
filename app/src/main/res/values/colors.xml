@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colors taken from the www.icao.int website as my interpretation of the theme colors. -->
+    <color name="colorPrimary">#FF97D378</color>
+    <color name="colorPrimaryDark">#FF92C775</color>
+    <color name="colorAccent">#FF1B4177</color>
+</resources>
